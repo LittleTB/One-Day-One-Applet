@@ -7,6 +7,9 @@ while True:
          #这里碰到一个东西就是，使用open()文件迭代器的方法，会自动在读取的对象后面增加一个跨行符号\n ，
          #所以这里需要一个rstrip()去掉右边的跨行符。
         if filter_word.rstrip() in user_input:    
-            user_input = user_input.replace(filter_word.rstrip(), "**")
-    print(user_input)
+            replace('filter_word', '**')
+            print('Freedom!')
+            break
+    else:
+        print('Human Rights!')
 
